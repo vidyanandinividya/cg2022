@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+section
+{
+    padding: 100px;
+}
+.banner
+{
+    position: relative;
+    background-image: url("images/background.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.msg-container
+{
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    left: 14%;
+    top: 57%;
+    transform: translateY(-50%);
+}
+.msg-col
+{
+    width: 600px;
+    height: 280px;
+}
+.msg-col h1
+{
+color: #fff;
+font-size: 50px;
+font-weight: 1em;
+line-height: 1.5em;
+}
+.msg-col p
+{
+color: #fff;
+font-size: 1em;
+line-height: 1.5em;
+}
+.msg-col a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    background: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+.social-icons
+{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+.social-icons ul li
+{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+.social-icons ul li a
+{
+    color: #999;
+    border: 1px solid #999;
+    padding: 5px;
+    border-radius: 50%;
+    display: block;
+
+}
+@media(max-width: 600px)
+{
+    header
+    {
+        padding: 20px 20px;
+    }
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+    section 
+    {
+        padding: 100px 20px;
+    }
+}

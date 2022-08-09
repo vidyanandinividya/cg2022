@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class Demo</title>
+    <style>
+        a:link
+        {
+            color: blue;
+        }
+        a:hover
+        {
+            color: red;
+        }
+        a:focus
+        {
+            color: purple;
+        }
+    ol
+    {
+        padding: 0;
+        list-style: none;
+    }
+    ol li
+    {
+        padding: 10px 0;
+        border-top: 1px solid #000;
+    }
+    li:first-child
+    {
+        border-top: none;
+    }
+    li:last-child
+    {
+        border-top: none;
+    }
+    li:nth-child(odd)
+    {
+        color: blue;
+    }
+    li:nth-child(even)
+    {
+        color: red;
+    }
+    p::first-line
+    {
+        color: red;
+        font-variant: small-caps;
+    }
+    p::first-letter
+    {
+        font-style: oblique;
+        font-weight: bolder;
+        
+    }
+    /*h1::before
+    {
+        content: url("images/car1.webp");
+    }*/
+    h1.article::first-letter
+    {
+        color: blue;
+        font-size: xx-large;
+    }
+   
+    </style>
+</head>
+<body>
+    <p>Visit <a href="https://www.google.com" target="_blank">www.google.com</a></p>
+    <h1 class="article">Sample Ordered List</h1>
+    <ol>
+        <li>Mix Ingredients</li>
+        <li>Bake in oven for an hour</li>
+        <li>Allow to stand for ten minutes</li>
+        <li>Mix Ingredients</li>
+        <li>Bake in oven for an hour</li>
+        <li>Allow to stand for ten minutes</li>
+    </ol>
+    <p>
+        The first line of this paragraph is styled differently form the rest of the line.The first line of this paragraph is styled differently form the rest of the line.The first line of this paragraph is styled differently form the rest of the line.The first line of this paragraph is styled differently form the rest of the line.The first line of this paragraph is styled differently form the rest of the line.The first line of this paragraph is styled differently form the rest of the line.
+    </p>
+</body>
+</html>

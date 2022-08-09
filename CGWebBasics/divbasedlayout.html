@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div based Layout</title>
+    <style>
+        body
+        {
+            font: 14px Arial,sans-serif;
+            margin: 0px;
+        }
+        .container
+        {
+            width: 100%;
+            background: #f2f2f2;
+        }
+        .header
+        {
+            padding: 10px 20px;
+            background: #acb3b9;
+        }
+        .header h1
+        {
+            font-size: 24px;
+            text-align: center;
+        }
+        .nav, .section
+        {
+            float: left;
+            padding: 20px;
+            min-height: 170px;
+            box-sizing: border-box;
+        }
+        .nav
+        {
+            width: 20%;
+            background: #d4d7dc;
+        }
+        .section
+        {
+            width: 80%;
+        }
+        .nav ul
+        {
+            list-style: none;
+            line-height: 24px;
+            padding: 0px;
+        }
+        .nav ul li a
+        {
+            color: #333;
+        }
+        .clearfix:after
+        {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .footer
+        {
+           background: #acb3b9;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!--Root Div-->
+        <div class="header"> <!--Header-->
+            <h1>HTML - Web Basics</h1>
+        </div>
+        <div class="content clearfix"> <!--Content-->
+            <div class="nav"> <!--Left side (for links)-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="section"> <!--right side (for contents)-->
+                <h2>Welcome to our site</h2>
+                <p>Heer you will learn how to create websites</p>
+            </div>
+        </div>
+        <div class="footer"><!--Footer-->
+            <p>copyright &copy; xyz.com</p>
+        </div>
+    </div>
+</body>
+</html>

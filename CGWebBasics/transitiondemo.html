@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Demo</title>
+    <style>
+        button
+        {
+            color: #fff;
+            border:3px solid brown;
+            padding: 10px 20px;
+            background: orange;
+            font: bold 18px sans-serif;
+            transition-property: background, border;
+            transition-duration: 1s,2s;
+        }
+        button:hover
+        {
+            background: red;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Hover on me</button>
+</body>
+</html>

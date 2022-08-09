@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML optgroup Tag</title>
+</head>
+<body>
+    <form>
+        <label for="cars">Cars:</label>
+        <select name="cars" id="cars" multiple="multiple">
+            <optgroup label="Sports Cars">
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+            </optgroup>
+            <optgroup label="Luxury Cars">
+                <option value="mercede">Mercedes</option>
+                <option value="bentley">Bentley</option>
+            </optgroup>
+            <optgroup label="Basic Cars">
+                <option value="hundai">Hundai</option>
+                <option value="tata">Tata Motors</option>
+            </optgroup>
+
+        </select><br><br>
+        <label for="mycolor">Select Color:</label>
+        <input type="color" id="mycolor"><br><br>
+        <!--Date attribute not supported by IE and safari-->
+        <label for="mydate">Select Date:</label>
+        <input type="date" value="2019-04-15" id="mydate"><br><br>
+        <!--not supported by firefox,safari and IE-->
+        <label for="mymonth">Select Month:</label>
+        <input type="month" id="mymonth"><br><br>
+        <label for="mynumber">Enter a number</label>
+        <input type="number" id="mynumber" min="1" max="10" step="0.5"><br><br>
+        <label for="myrange">Select a Number</label>
+        <input type="range" id="myrange" min="1" max="10" step="0.5"><br><br>
+        <label for="myphone">Telephone Number:</label>
+        <input type="tel" id="myphone" placeholder="XX-XXXX-XXXX"><br><br>
+        <label for="myurl">Enter Website URL:</label>
+        <input type="url" id="myurl" required><br><br>
+        <input type="submit" value="Submit">
+
+        </form>
+</body>
+</html>

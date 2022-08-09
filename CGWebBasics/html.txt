@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    -- It is the document type declaration
+    it instructs the web browser that this document is an HTML5 document.
+<head> 
+    -- It is a container for the tags that provides information about the document
+<body>
+    -- it contains the documents's actual content
+<h1> --- <h6>
+Hyperlink
+ It is a connection from one web resource to another.
+ It allows users to move seamelessly from one page to another, on any server anywhere in the world.
+
+ An unvisited link -- underlined and blue color
+ A visited link -- underlined and purple color
+
+ target -- it tells the browser where to open the linked document
+
+ _blank -- it opens the linked document in a new tab
+
+ paragraph
+    It is used to publish text on the web pages
+breaks
+    <br> tag to insert a line break on the web page
+    since the <br> is an empty element, so there is no need of corresponding </br> tag
+<hr>
+    it is used to create horizontal rules or lines to visually separate content sections on a web page. 
+    like <br>, <hr> is alson an empty element.
+&nbsp -- for creating extra consecutive spaces
+
+<pre>
+this tag is used to display spaces, tabs, line breaks, etc. exactly as written in the HTML file
+<strong> 
+    It indicates that its contents have strong importance
+<b>
+    It is simply used to draw the reader's attention without conveying any special importance
+use <em> and <strong> tags when the content of your web page requires that certain words or phrases should have strong emphasis or importance.
+
+<blockquote>
+It generally displayed with indented left and right margins, along with a little extra space added above and below
+
+<address>
+It represents the contact information for a person, people or organization.
+Most browser display an address block in italic
+
+List
+    It is used to present list of information in well formed and semantic way.
+
+Unordered List - It is used to create a list of related items, in no particular order
+Ordered List - it is used to create a list of related items, in a specific order.
+Description List - It is used to create a list of terms and their description.
+
+Website Layout
+ Creating a website layout is the activity of positioning the various elements that make a web page in a well-structured manner and give appealing look to the website.
+    Table Based layout
+        It is the simplest way for creating layouts in HTML.
+        Generally, this involves the process of putting the content such as text, images and so on into rows and columns
+    Div Based layout
+        It is the most common method of creating layouts in HTML.
+        The <div> element is used for marking out block of content, or set of other elements inisde an HTML document.
+    HTML5 Structural Elements
+        <header> <footer> <nav> <section> <aside> to define the different parts of a web page in a more semantic way.
+HTML Form 
+    These are required to collect different kinds of user inputs
+<form>
+    It is used to create an HTML form
+    Input Element
+        It allows you to specify various types of user input fields.
+
+        Text Field - one line areas that allow the user to input text
+color -- allows the user to select color from color picker
+date -- allows the user to select a date from drop-down calender
+email -- allows the user to enter emial address
+month -- allows the user to select a month and year from drop-down calender
+time -- can be used for entering a time (hours and minutes)
+range -- enter numeric value within a specified range
+search -- used for creating search input fields
+url -- can be used for entering URL's or web addresses
+tel  -- can be used for entering a telephone number
+number -- can be used to enter numeric values
+week -- allows the user to select a week and year from a drop-down calender.
+datetime-local  -- select both local date and time
+
+HTML Images 
+    <img> 
+        used to insert images in the HTML documents
+        It is an empty element and contains attributes only
+    <picture>
+        It allows to define multiple versions of an image to target different types of devices
+HTML iFrame
+    An iframe or inline frame is used to display external objects including other web pages within a web page.
+    <iframe>
+    The default height is 150px
+    The default width is 300px
+
+CSS
+ Cascading Style Sheet which is used to design the web page
+
+Including CSS in HTML documents
+    Inline Styles 
+        using the style sttribute in the HTML tag
+    Why to avoid Inline Styles
+        As style rules are embedded directly inside the HTML tag, it causes the presentation to become mixed with the content of the document.
+        which makes the code hard to maintain and neagtes the purpose of using CSS
+    Embedded Styles
+        Using the <style> element in the head section of a document
+    External Style Sheets
+        Using the <link> element, pointing to an external CSS file

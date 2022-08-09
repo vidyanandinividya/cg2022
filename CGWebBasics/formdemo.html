@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        input[type="text"]
+        {
+            border: 2px solid red;
+        }
+        input[type="submit"]
+        {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>User Registration Details:</legend>
+        <!--<label> tag is used to define the labels for <input> element-->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="User Name:" required><br><br>
+        <!--password fields are similar to text fields. The only difference is- characters in password field are masked-->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password:"><br><br>
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" id="email" placeholder="Emial Id:"><br><br>
+        <!--Radio Buttons are used to let the user select exactly one option from a pre-defined set of options-->
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br><br>
+        <!--Checkboxes are used to let the user select one or more option from a pre-defined set of options-->
+        <label for="sports">Sports:</label>
+        <input type="checkbox" name="sports" id="soccer" checked>
+        <label for="soccer">Soccer</label>
+        <input type="checkbox" name="sports" id="cricket">
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" name="sports" id="baseball">
+        <label for="baseball">Baseball</label><br><br>
+        <!--The file fields allow a user to browse for a local file and send it as an attachement with the form data-->
+        <label for="file-select">Upload:</label>
+        <input type="file" name="upload" id="file-select"><br><br>
+        <!--Textarea is a multiple-line text input control that allows a user to enter more than one line of text.-->
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="30" rows="3"></textarea><br><br>
+        <!--Select Box is a dropdown list of options that allows user to select one or more options from a pull-down list of options-->
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="bengaluru">Bengaluru</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="hyderabad">Hyderabad</option>
+        </select><br><br>
+        <!--A submit button is used to send the form data to a web server-->
+        <!--A reset button resets all the forms control to default values-->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+</body>
+</html>

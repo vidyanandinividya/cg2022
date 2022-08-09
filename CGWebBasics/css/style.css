@@ -1,0 +1,13 @@
+/*@import url("style1.css");*/
+body
+{
+    background: lightyellow;
+}
+/* This is a multi-line CSS comment
+that spans across multiple lines
+*/
+p
+{
+    color: blue;
+    font-size: 18px;
+}

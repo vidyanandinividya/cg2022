@@ -1,0 +1,158 @@
+There are 3 ways of including CSS in an HTML Document
+Inline styles
+    using the style attribute in the HTML tag
+Embedded styles
+    using the <style> element in the head section of a document
+External Style Sheets
+    using the <link> element, pointing to an external CSS file
+    @import is another way of loading an external style sheets
+
+CSS Selectors
+    It is a pattern to match the elements on a web page.
+
+Types of Selectors
+    Universal Selector
+        It is denoted by an asterisk (*), matches every single element on the page
+        It is not recommended to use too often
+        It is used to remove the default margins and paddings from the elements
+    Element Type Selectors
+        It matches all instance of the element in the document with the corresponding element type name.
+    Id Selectors
+        It is used to define style rules for a single or unique element
+        It is defined with a hash sign(#) immediately followed by the id value
+    Class Selectors
+        It is used to select any HTML element that has a class attribute.
+        All the elements having that class will be formatted according to the defined rule.
+        It is defined with a period sign (.) immediately followed by the class value
+    Descendant Selectors
+        These selectores are used when you need to select an element that is descendent of another element.
+    Child Selectors
+        It is used to select only those elements that are direct children of some element
+        It is made up of two or more selectors separated by a greater than symbol (>)
+    Adjacent Sibling Selectors
+        It is used to select sibling elements (elements at the same level)
+        E1+E2, where E2 is the target of the selector
+    General Sibling Selectors
+        It is similar to the adjacent sibling selectors, but it is less strict.
+        E1 ~ E2 , where E2 is the target of the selector
+    Grouping Selectors
+        when several selectors share the same style rules declarations.
+        you can group them into a comma-separated list to minimize the code
+CSS Color
+    The color property defined the text color (foreground) of an element
+Colors can be specified in the following formats
+    a color keyword - red, green.. etc
+    a HEX value - #ff0000 #00ff00 etc 
+        The most commonly used method of defining color on the web
+        #ff ff ff -- #fff
+        #000000 -- #000
+        #00ff00 -- #0f0
+    an RGB value - rgb(255,0,0)
+Setting Background Properties
+
+Background Color
+    background-color 
+        it is used to set the background color of an element
+Background Image
+    background-image 
+        It is used to set an image as a background of an HTML document
+    background-repeat
+        It is used to control how a background image is repeated or tiled in the background of an element.
+        It can be repeated vertically, horizontally, in both direction, no direction.
+    background-position
+        It is used to control the position of the background image.
+        If no position specified the default is top left (0,0)
+    background-attachment
+        It determines whether the background image is fixed with regard to the viewport or scrolls along with the containing block.
+CSS Fonts
+    font-family
+        It is used to specify the font to be used to render the text
+    font-style
+        It is used to set the font face style for the text content of an element
+    font-size
+        It is used to set the size of the font for the text content of an element.
+        percentage
+            let's set the font-size for the body element to 62.5% (that is 62.5% of the default 16px)= 10px or 0.625em
+        pixels --
+            It specifies the fixed length
+            Not considered very accessible
+        em 
+            It refers to the font size of the parent element.
+            1em = the size of the font that applies to the parent of the element
+            default value 1em=16px
+
+        keywords
+            xx-small x-small small medium (default) large x-large xx-large
+        Viewport Units
+            vw or vh
+            It refers to the percentage of the browser's viewport dimensions.
+
+            1vw = 1% of viewport width
+            1vh = 1% of viewport height
+    font-weight
+        It specifies the weight or boldness of the font
+            The numeric values form 100 - 900
+            normal bold bolder lighter
+    font-varient
+        It allows the text to be displayed in a special small-caps variation
+CSS Pseudo-classes
+    It is used to style the dynamic stated of an element
+    such as hover, active, focus etc.
+    It starts with a colon(:)
+    nth-child(N)
+     N is an argument which can be a number, a keyword or an expression
+CSS Pseudo-elements
+    It is used to style elements or parts of the elements without adding any IDs or classes to them
+    It start with a double colon(::)
+Box Model
+    CSS box model typically describes how the rectangular boxes are laid out on a web page.
+Padding Properties
+    It is used to set the spacing between the content of an element and its border (or the edge of the element's box if it has no defined border)
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+Border Properties
+    It is used to define the border area of an element's box
+    border-style
+    border-size
+    border-color
+Margin Properties
+    It is used to set the spacing around the border of an element's box(or the edge of the element's box, if it has no defined border)
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+CSS3 box-shadow property
+    It is used to add shadow to element's boxes.
+    box-shadow: offset-x offset-y blur-radius color 
+
+    blur-radius will not accept nagative values
+    text-shadow 
+    text-shadow: offset-x offset-y blur-radius color 
+opacity 
+    takes a value from 0.0 to 1.0
+    opacity:1 (element is completely opaque 0% transparent)
+    opacity:0 (100% transparent)
+CSS3 2D Transforms
+    transform 
+        It uses the transform functions to manipulate the coordinate system used by an element in order to apply the transformation effect
+        translate()
+            it moves an element from its normal position to a different position using the values provided as parameters to the function
+        rotate()
+            It rotates the element around its origin
+        scale()
+            It increases or decreases the size of an element
+        skew()
+            It skew an element along the X-axis or Y-axis or in both by any given angle
+CSS3 Transitions
+    It allows to animate property from the old value to the new value smoothly over time
+    transition 
+    transition-delay
+        specifies when the transition will start
+    transition-duration
+        specifies the number of seconds or miliseconds a transition animation should take to complete
+    transition-property 
+        specifies the names of the CSS properties to which a transition effect should be applied
+    transition-timing-function
+        specifies how the intermediate values of the CSS properties being affected by a transition 

@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+p
+{
+    color: blue;
+}
+cite
+{
+    color: blueviolet;
+    font-size: 12px;
+}
+#id1
+{
+    color: green;
+}
+#id2
+{
+    color: red;
+}
+.class1
+{
+    color: purple;
+}

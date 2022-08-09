@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Selectors</title>
+    <style>
+    /*Descendent Selectors*/
+       /* ul.menu
+        {
+            padding: 0;
+            list-style: none;
+        }
+        ul.menu li
+        {
+            display: inline;
+        }
+        ul.menu li a
+        {
+            margin: 10px;
+            text-decoration: none;
+        }*/
+   /*Child Selectors*/
+   /* ul > li
+    {
+        list-style: square;
+    }
+    ul > li ol
+    {
+        list-style: none;
+    }*/
+  /*Adjacent sibling and General Sibling*/
+    /* h1 ~ p
+   {
+    color: blue;
+    font-size: 18px;
+   }
+   ul.task + p
+   {
+    color: red;
+    text-indent: 30px;
+   }*/
+  /* h1,p
+   {
+    font-weight: normal;
+    color: rgb(255,165,0);
+   }
+   h1
+   {
+    font-size: 38px;
+   }
+   p.one
+   {
+    color: #00f;
+    border: 2px solid;
+   }
+   p.two
+   {
+    color: #0f0;
+    border: 2px solid red;
+   }*/
+   body
+   {
+   background-color: #f0e68c;
+    background-image: url("images/car2.jpeg");
+   /* background-repeat: no-repeat;
+    background-position: 250px 25px;
+    background-attachment: fixed;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    /*background: #f0f0f0 url("images/car4.jpeg") no-repeat scroll;*/
+    
+   }
+   </style>
+</head>
+<body>
+    <!--<h1>This is a <em>heading</em></h1>-->
+    <!--Descendent Selectors-->
+   <!-- <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#">Feedback</a>-->
+   <!--Child Selectors-->
+    <!--<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Services</a>
+            <ol>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>-->
+    <h1>This is a heading</h1>
+    <p class="one">This is a paragraph </p>
+    <p class="two">This is another paragraph</p>
+    <ul class="task">
+        <li>Task1</li>
+        <li>Task2</li>
+        <li>Task3</li>
+    </ul>
+    <p>This is one more paragraph</p>
+    <p>This is also a paragraph</p>
+</body>
+</html>
