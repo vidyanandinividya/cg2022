@@ -1,0 +1,132 @@
+JavaScript
+JS is designed to add interactivity and dynamic effects to the web pages by manipulating the content returned from the web server.
+<script> </script>
+Variable
+    Variables are symbolic names for values
+    var  --Global variable
+    let    -- ES6 -- block variable 
+    const  -- ES6 -- constant variable which needs to be initialized
+                     the value can not be changed
+    Naming Conventions
+    -start with a letter, underscore(_) or dollar sign($)
+    -can not start with a number
+    -can not contain spaces
+    -cannot be a JS keyword
+Data Types
+    It basically specify what kind of data can be stored and manipulated within a program
+    string
+    number
+    boolean
+    undefined
+    null
+    object
+    array
+    function
+    typeof 
+     It is used to find out what type of data a variable or operand contains
+     It can be use with or without paranthesis
+Operators
+    These are symbols or keywords that tell the JS engine to perform some sort of actions.
+CC #1
+Mark and John are trying to compare their BMI (Body Mask Index), which is calculated using the formula: BMI = mass / height * * 2 = mass / (height * height) . (mass in kg and height in meter)
+1. Store Mark's and John's mass and height in Variables
+2. Calculate both their BMIs using the formula
+3. Create a boolean variable 'markHeigherBMI' containing information about whether Mark has a higher BMI that John
+ 1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher that John's!" or "John's BMI is higher than Mark's!"
+ 2. use a template literal to include the BMI values in the outputs
+    "Mark's BMI (28.3) is higner than John's (23.9)"
+
+String and Template Literals
+\n - newline character
+Conditional Statements
+--if Statement
+--if..else Statement
+--if..else if..else Statement
+--switch..case statement
+Type Conversion and Type Coercion
+    Both are same because both are used to convert values from one data type to another
+    The key difference
+    type coercion is implicit whereas type conversion can be either implicit or explicit
+CC #2
+There are two gymnastics teams , Dolphin and Koalas
+They compete againt each other 3 times. The winner with the highest average score wins the trophy
+1. calculate the average score for each team, using the test data
+2. Compare the team's average scores to determine the winner of the competition, and print it to the console.
+Don't forget that there can be a draw, so test for that as well 
+
+Test Data: Dolphins score 96, 108 and 89
+           Koalas score 88, 91 and 110
+3. Include a requirement for a minimum score of 100. with this rule,
+ a team only wins if it  has a higher score than the other team, and at the same time a score of at least 100 points
+    Hint: use logical operator to test for minimum score , as well as multiple else-if blocks
+
+Switch .. case
+ It tests a variable or expression against a series of values until it finds a match, and then executes the block of code corresponding to that match
+
+CC #3
+John wants to build a very simple tip calculator for whenever he goes eating in a restaurant.
+In his country, It's usual to tip 15% if the bill value is between 50 and 300. if the value is different, the tip is 20% 
+1. your task is to calculate the tip, depending on the bill value. 
+    create a variable 'tip' for this (do use ternary operator)
+2. print a string to the console containing the bill value, the tip, and the final value (bill + tip) ( do use template string)
+Test data: Test fo bill values 275, 430
+
+Function 
+    It is a group of statements that perform specific tasks and can be kept and maintained separately
+
+    It reduces the repetition of code within a program
+    It makes the code much easier to maintain
+    It makes it easier to eliminate the errors
+
+    receive input date
+    transform data
+    output data
+
+    Function Declaration
+        Functions that can be used before it's declared
+
+
+    Function Expression
+        Essentially a function value stored in a variable
+
+    Arrow Function
+        Great for a quick one-line functions. has no function keyword
+CC #4
+Each team compete 3 times, and then the average of the 3 scores is calculated (so one average score per team)
+A team only wins if it has atleast double the average score of the other team. otherwise, no team wins
+
+1. create an arrow function 'calcAvearge' to calculate the average of 3 scores
+2. use the function to calculate the average for both teams
+3. create a function 'checkWinner' that takes the average score of each team as parameteres ('avgDolphins' and 'avgKoalas') and then logs the winner to the console, together with the victory points , according to the rule "Koalas win (30 vs 13)"
+4. use the 'checkWinner' function to determine the winner.
+5. ignore draws
+Test Data: Dolphins score 44,23, and 71. Koalas score 65, 54 and 49
+
+Immediately Invoked Function Expression (IIFE)
+
+(function(){
+    //...
+})();
+
+function add(a,b)
+{
+    return a+b;
+}
+console.log(window.add)
+    The script may not use the memory efficiently
+    Having global variables and functions will likely cause the name collisions
+
+closures
+    It is a combination of a function bundled together with reference to its surrounding state.
+    It gives you access to an outer function's scope from an inner function
+Array 
+    These are complex variables that allow to store more than one value or group of values under a single variable name
+
+CC #5
+Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%
+1. write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rule above.
+    Use the function type you like the most
+2. And now let's use arrays! so create an array 'bills' containg the test data
+Test data: Test fo bill values 275, 430,125 and 550
+3. create an array 'tips' containing the tip value for each bill
+4. Create an array 'total' containing total values, so the bill+tip
