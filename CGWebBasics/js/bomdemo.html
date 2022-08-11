@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="windowSize()">Get Window Size</button><br><br>
+    <button type="button" onclick="getResolution()">Get Window Size</button>
+    <script>
+       /* function windowSize()
+        {
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+            alert("width:"+w+","+"Height:"+h)
+        }
+        function getResolution()
+        {
+            alert("Your screen is:"+screen.width+"X"+screen.height)
+        }*/
+        //confirm dialog
+        var result=confirm("Are you sure?");
+        if(result)
+        {
+            document.write("You have clicked OK button")
+        }
+        else
+        {
+            document.write("You have clicked Cancel button")
+        }
+    </script>
+</body>
+</html>

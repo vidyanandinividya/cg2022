@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+
+        function showPosition()
+        {
+            if(navigator.geolocation)
+            {
+               /* navigator.geolocation.getCurrentPosition(function(position){
+                    let currentPosition="Lattitude:"+position.coords.latitude+" , "+"Longitude:" +position.coords.longitude;
+                    document.getElementById("result").innerHTML=currentPosition;
+                });*/
+                navigator.geolocation.getCurrentPosition(function(position)
+                {
+                    lat=position.coords.latitude;
+                    long=position.coords.longitude;
+                    let pos=new google.maps.LatLng(lat,long);
+                    let options={
+                        center:pos,
+                        zoom:16,
+                        mapTypeControl:true,
+                        navigationControlOptions:{
+                            style:google.maps.NavigationControlStyle.SMALL
+                        }
+
+                    }
+                    let map=new google.maps.Map(document.getElementById("result"),options);
+                    let marker=new google.maps.Marker({position:pos,map:map,title:"You are here"});
+
+                });
+            }
+            else
+            {
+                alert("Sorry, Your browser does not support");
+            }
+        }
+    </script>
+</head>
+<body>
+   <!-- <script src="js/script5.js"></script>-->
+   <div id="result" style="width: 800px; height:500px;">
+    <!--Position information-->
+   </div>
+   <button type="button" onclick="showPosition();">Show My Current Position</button>
+</body>
+</html>

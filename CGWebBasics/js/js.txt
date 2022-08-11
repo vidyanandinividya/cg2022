@@ -130,3 +130,117 @@ Tip 15% of the bill if the bill value is between 50 and 300, and if the value is
 Test data: Test fo bill values 275, 430,125 and 550
 3. create an array 'tips' containing the tip value for each bill
 4. Create an array 'total' containing total values, so the bill+tip
+
+Objects
+    define key value pairs
+CC #1
+BMI = mass / height * * 2 = mass / (height * height) . (mass in kg and height in meter)
+
+1. for each of them, create an object with properties for their full name, and height
+2. create a 'calcBMI' method on each object to calculate the BMI. store the BMI value to a property and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI
+"John Smith's BMI (28.3) is higher than the Steven Miller's (23.9)!"
+
+map, filter and reduce
+
+map
+ It is used to loop over arrays just like forEach method
+ map creates a brand new array based on the original array
+ arr=[2,3,4,5]
+ condition - multiply the elements with 2
+ this method maps the value of the original array to a new array and that's wht this method is called map.
+filter
+ It is used to filter for elements in the original array which satisfy a certain condition 
+ arr=[24,30,12,56,5,9]
+ condition -looking for elements grater than 10
+ filterarr=[24,30,12,56]
+reduce 
+It is used to boil down all the elements of the original array into one single value
+arr=[2,5,8,10]
+condition : add all the elemnts in the array
+DOM (Document Object model)
+JS <---- DOM ---> Browser
+ Allows us to make JS interact with the Browser
+ DOM tree is generated from an HTML document. which we can then interact with
+ Document --> ELement (html) --> Element (body) --> Element (section)-->Element (p)
+document.createElement() -- creats a new element in an HTML document
+Navigate Between the nodes
+Timers
+    It is a function that enable you to execute a function at a particular time.
+
+    setTimeout()
+        It is used to execute a function or specified piece of code just once after the certain period of time
+    setInterval()
+        It is used to execute a function or specified piece of code repeatedly at fixed time intervals
+OOPs in JavaScript
+    OOP is a programming paradigm based on concept of Objects
+    we use objects to model(describe) real-world or abstract features
+    Objects may contain data (properties) and code (methods)
+    Interaction happen through a public interface(API) methods that the code outside of the object can access and use to communicate with the object.
+    Abstraction 
+
+    Encapsulation
+    Inheritance
+    Polymorphism
+3 ways 
+    Constructor function
+        create object from a function
+        Example : Array, Map and Set 
+    ES6 Classes
+        ES6 classes do not behave like classes in classical OOP
+    Object.create()
+        is the easiest and most straightforward way of linking an object to a prototype object
+CC #2
+    1. use constrcutor fucntion to implement a Car. A car has a make and speed property. The spped property is the current speed of the car in km/h 
+    2. Implement an 'accelerate' method that will increase the car's speed by 10, and log the new speeed to the console.
+    3. Implement a 'brake' method that will decrease the car's speed by 5, and log the new speed to the console.
+    4. create 2 car objects and experiment with calling 'accelerate' and 'brake' multiple times on each of them
+    Car 1: 'BMW' 120km/h 
+    Car 2: 'Mercedes' 95km/h 
+Asynchronous Java script
+
+Synchronous vs Asynchronous
+Synchronous -- Eecutes one after the other
+Asynchronous -- Not occuring at the same time
+  Browser API/Web API 
+    It include methods like setTimeout or event handlers like click, mouse over
+    
+  Promises
+   A unique JS object that allows to perform asynchronous operation 
+
+   create using Promise constructor.
+   pass an executor function to it.
+   resolve -- what to do when promise returns successfully
+   reject -- what to so when it throws an error
+
+   .then() -- handle the result
+   .catch() -- handle the error
+
+//define a function
+function f1()
+{
+    //Do something
+}
+function f2()
+{
+    //Do something
+    f1();
+}
+function f3()
+{
+    //Do something
+    f2()
+}
+//Invoke the function
+f1() -- First it goes to stack execute and pops out
+f2() -- Second it goes to stack execute and pops out
+f3() -- Third it goes to stack execute and pops out
+f3()
+
+async/await 
+
+async - it is used to return promise
+await - It is used to wait and handle promise
+
+-- await keyword can not be used without async 
+-- the function you use after await keyword may or may not be an async

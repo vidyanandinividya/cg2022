@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+</head>
+<body>
+    <p id="p1">This is a Paragraph</p>
+    <p>This is another paragraph</p>
+    <button type="button" onclick="setStyle()">Click Here to change the paragraph style</button><br>
+    <button type="button" onclick="insertElement()">Click To Insert Element</button>
+    <a href="#" target="_blank" id="myLink">Google</a><br>
+    <div id="main"></div>
+    <div id="div1">
+        <h1 id="title">My Heading</h1>
+        <h2>My Heading 2</h2>
+        <h3>My Heading 3</h3>
+        <p id="p2"><span>This is some text</span></p>
+        <hr>
+    </div>
+
+    <script>
+       /* function setStyle()
+
+        {
+            //selecting element
+            var x=document.getElementById("p1")
+
+            //Applying some style
+            x.style.color="blue";
+            x.style.fontSize="18px";
+            x.style.fontWeight="bold";
+            alert(x.style.color)
+
+
+        }*/
+       /* var link=document.getElementById("myLink")
+        var href=link.getAttribute("href")
+        document.write(href)
+        var target=link.getAttribute("target")
+        document.write(target)
+        link.setAttribute("href","https://www.google.com")
+        link.removeAttribute("href")*/
+       /* function insertElement()
+        {
+            //creating a new DIV element
+            var newDiv=document.createElement("div");
+            var newContent=document.createTextNode("Hi, How are you?");
+            newDiv.appendChild(newContent);
+            var curDiv=document.getElementById("main");
+            document.body.appendChild(newDiv,curDiv);
+        }*/
+        var div1=document.getElementById("div1");
+        if(div1.hasChildNodes())
+        {
+            var nodes=div1.children;
+            for(let i=0;i<nodes.length;i++)
+            {
+                alert(nodes[i].nodeName)
+            }
+        }
+        //alert(div1.firstElementChild.nodeName)
+        //alert(div1.lastElementChild.nodeName)
+        div1.firstElementChild.style.color="red"
+        var p2=document.getElementById("p2");
+        alert(p2.parentNode.nodeName)
+        alert(p2.nextSibling.nodeName)
+        p2.firstElementChild.style.color="green"
+    
+    </script>
+</body>
+</html>
