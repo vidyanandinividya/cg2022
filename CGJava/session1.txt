@@ -1,0 +1,176 @@
+Comments
+    Source code can be commented to clarify it or to add notes.
+        Single line
+            marked with slashes (//).
+            Everything following them in the same line is interpreted as a comment
+        Multi line
+            marked with a slash (/) ans an asterisk (*) and closed with an asterisk (*) followed by a slash(/)
+
+        Javadoc comment
+            any multiline comment that are placed before class, field or method declaration.
+Reading Input
+    Input refer to text written by the user read by the program
+
+variable
+    are names containers that contain information of some specified type and have a name
+data type
+    the type of data you want to store in variable is specified by the data type
+
+Primitive 
+    byte -- whole number
+    short -- whole number
+    int  -- whole number (default)
+    long -- whole number
+    float -- floating-point (fractional number)
+    double -- floating-point (fractional number) (default)
+    char -- read one character
+    boolean -- true or false
+Reference
+    Array
+Variable Naming Rules
+    Cannot contain ceratin special symbols
+    spaces are not allowed
+    first name 
+        firstName
+        first_name
+    Keyword will not accept
+    public
+    should not start with a number
+    1abc -- not allowed
+    abc1 -- allowed
+Calculating
+    Create a program to calculate the sum of two integer
+Conditional Logic
+    if else -- for single Condition 
+    if else if else - for multiple condition
+CC #1
+Create a program which reads numbers from the user until the user writes 0. Then the program prints the positive and negative numbers given, and percentage of positive numbers from all numbers given
+
+Method
+    It is a named set of statements.
+    It's a piece of program that can be called from elsewhere in the code by the name given to the method.
+Method Parameters
+    These are values given to a method that can be used in its execution.
+Object Oriented Programming
+    OOP is primarily about isolating concepts into their own entities
+    creating abstraction
+    Object
+        It refers to an independent entity that contains both data(instance variable) and behaviour (methods)
+    Class 
+        A class defines the type of objects that can be created from it.
+        instance variable -- describes the object's data
+        constructor/constructors
+        methods -- define its behaviour
+    Relationship between class and object   
+        A class lays out a blueprint for any objects that are instantiated from it.
+
+    - The object's variable (instance variable) specify the internal state of the object
+    - The object's method specify what the object does
+
+Access Specifiers
+    how the method class and variable can be accessed by others
+
+    default (not a keyword) -- package level 
+    public -- universal 
+    private -- not be shared
+
+    protected -- only sub class can access
+
+    class -- default and public 
+constructor
+    it is a special method that is invoked when the object of the class is created  
+    memory allocation
+Class Person
+{
+
+}
+
+class Person extends Object
+{
+
+}
+Inheritance -- one class gets access to use super class properties
+Class A {}
+Class B extends A {} -- code resuability except constructor (at runtime)
+
+Property
+ there are two properties known as getter and setter which are used to access the private variables outside of the class.
+ Getter -- to retrieve the details (return type always match with variable data type)
+ Setter -- to assign the value (void)
+
+ CC #2
+ create a program to print the area of a ractangle by creting a class named 'Area' having two methods.
+ 1. set method name 'setDim' takes length and breadth of the rectangle as Parameters 
+ 2. set the method name 'getArea' returns the area of the rectangle.
+ 3. Length and breadth of the rectangle are entered through keyboard.
+
+ package
+    These are directories in which source code file are organised
+
+OOPs concepts
+    abstraction 
+        which can be implemented in two ways
+            Abstract Class (0-100% abstraction)
+            it is used when you know something and rely on others for what you don't know
+                Scenario
+                    Consider we want to start a service like Bulk SMS sender, where we take orders from various telecom vendors (Airtel, Vodafone and BSNL etc)
+                Note:   
+                    for infrastructure like towers we will be replying on vendor who is going to give us order
+                    what our job is to manage Telecom Regulations for different countries where we are sending SMS
+                establishConnectionWithYourTower()
+                {
+                    //connect using vendor way
+                    //we don't know how
+                }
+                destroyConnectionWithYourTower()
+                {
+                    //disconnect using vendor way
+                    //we don't know how
+                }
+                checkForDND()
+                {
+                    //check for number present in DND
+                }
+                checkForTelecomeRules()
+                {
+                    //check for Telecome rules
+                }
+                sendSMS()
+                {
+                    establishConnectionWithYourTower()
+                    checkForDND()
+                    checkForTelecomeRules()
+                    destroyConnectionWithYourTower()
+                }
+
+abstrct class 
+    some methods I know, some methods I don't know and I wiil depend upon you to provide the implemetation of the method I don't know
+
+    implementer1
+
+ some methods I know, some methods I don't know and I wiil depend upon you to provide the implemetation of the method I don't know
+    implementer2
+
+Interface
+    I only know method names that I require for my job to be done.
+    You have to provide body for those methods
+    implementer 
+
+            Interface (100% abstraction)
+            It is used when you want to define a contract and you don't know anything about implementation (total abstraction)
+        Scenario
+            consider of starting a service like "makemytrip" where  we are responsible for displaying the flights from various flight service company and place an order from customer
+
+            1. Displaying flights from vendors like "airaisa","airindia","british airways" and "emirates"
+            2. place and order for seat to respective vendor
+            first we need to tell "airaisa","airindia","british airways" and "emirates" to give us list of flights, 
+             getAllAvailableFlights() - all vendors should provide and return list of flights
+             booking() - all vendors should book the flight 
+    encapsulation
+        -wich is implemnted by declaring the instance variable as private
+    Inheritance
+        - where chils class can access the properties of the parent class (except constructor and private properties)
+    Polymorphism
+        -It can be implemented in two ways  
+            Method Overloading (Static / Compile time Polymorphism)
+            Method Overriding (Dynamic/ Run time Polymorphism)

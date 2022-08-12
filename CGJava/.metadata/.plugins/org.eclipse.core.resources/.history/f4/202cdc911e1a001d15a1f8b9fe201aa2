@@ -1,0 +1,8 @@
+package session1;
+
+public class Person {
+	//these variables are "hidden" inside the object
+	private String name;
+	public int age;
+
+}

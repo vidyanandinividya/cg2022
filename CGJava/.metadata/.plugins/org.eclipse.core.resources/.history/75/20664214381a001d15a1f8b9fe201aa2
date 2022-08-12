@@ -1,0 +1,5 @@
+package session1.oopsconcepts;
+
+public abstract class SMSSender {
+
+}

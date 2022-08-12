@@ -1,0 +1,57 @@
+package session1;
+public class Person {
+	//these variables are "hidden" inside the object
+	private String name;
+	private int age;
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "[name=" + name + ", age=" + age + "]";
+	}
+	//instance method
+	public void printPerson()
+	{
+		System.out.println(this.name+",age "+this.age+" years");
+	}
+	//instance method
+	public void growOlder()
+	{
+		if(this.age<40)
+		{
+		this.age+=1;
+		}
+	}
+	//instance method
+	/**
+	 * 
+	 * @return "integer"
+	 */
+	public int returnAge()
+	{
+		return this.age;
+	}
+	public boolean allowedToVote(Person person)
+	{
+		if(person.getAge()>=18)
+		{
+			return true;
+		}
+		return false;
+	}
+}

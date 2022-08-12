@@ -1,0 +1,11 @@
+package package2;
+
+import package1.Class2;
+
+public class Class3 {
+	public void fn3()
+	{
+		new Class2().fn2();
+	}
+
+}

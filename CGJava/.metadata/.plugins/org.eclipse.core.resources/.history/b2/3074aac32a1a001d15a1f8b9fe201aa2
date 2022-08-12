@@ -1,0 +1,11 @@
+package package1;
+
+public class Class2 {
+	void fn2()
+	{
+		new Class1().fn1();
+	}
+	
+	
+
+}

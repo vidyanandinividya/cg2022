@@ -1,0 +1,14 @@
+package session1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person person=new Person("John",31);
+		Person harry=new Person("Harry",30);
+		person.printPerson();
+		harry.printPerson();
+	
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package session1.oopsconcepts;
+
+public abstract class SMSSender {
+	abstract public void establishConnectionWithYourTower();
+	abstract public void destroyConnectionWithYourTower();
+	public void checkDND()
+	{
+		System.out.println("Check for number present in DND");
+	}
+	public void checkForTelecomeRules()
+	{
+		System.out.println("Check for telecom rules");
+	}
+	public void sendSMS()
+	{
+		establishConnectionWithYourTower();
+		checkDND();
+		checkForTelecomeRules();
+		System.out.println("Sending SMS to numbers");
+		destroyConnectionWithYourTower();
+	}
+	
+	
+
+}

@@ -1,0 +1,27 @@
+package session1;
+
+public class Example {
+
+	public static void main(String[] args) {
+		//printing Hello World
+		/*System.out.println("Hello World!");
+		System.out.println("...and the Universe");
+		System.out.println("More text to print");*/
+		/*Next
+		 * -- more on printing
+		 * -- more variables
+		 * -- more datatypes
+		 */
+		//System.out.println("some other text to print");
+		greet();
+		greet();
+		greet();
+		
+	}
+	//your own method
+	public static void greet()
+	{
+		System.out.println("Greeting from the method world!!");
+	}
+
+}

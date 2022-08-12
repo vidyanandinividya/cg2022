@@ -1,0 +1,23 @@
+package session1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person person=new Person("John",31);
+		Person harry=new Person("Harry",30);
+		//person.printPerson();
+		//harry.printPerson();
+		harry.growOlder();
+		harry.printPerson();
+		System.out.println(harry);
+		System.out.println(harry.getAge());
+		System.out.println(harry.getName());
+		harry.setName("Harry Porter");
+		System.out.println(harry);
+		System.out.println(person);
+		
+	
+
+	}
+
+}
