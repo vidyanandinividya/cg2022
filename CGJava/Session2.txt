@@ -1,0 +1,117 @@
+Array
+    An array contains a limited amount of numbered spots(inidices) for values.
+    The length of an array is the amount of these indicies.
+    The values in an array are called elements
+Array is a homogenous container that can only store the same type of data,
+it's required to specify the data type while creating it.
+
+Indices and the structure of the memory
+numbers[0] -- refering the first element of the array.
+
+Types of Array
+    Single Dimensional Array
+        An array that has only one subscript or has one dimension 
+        int marks={56,34,23,67,12}
+    Multi-Dimensional Array
+        array within an array
+    create a program which stores 5 different subjects and marks of 10 students
+Check if an array is sorted or not -
+    Iterative and Recursive
+
+    1. if the array is null or has only one element then the array is already sorted
+    2. if there are more than 1 elements in the array, we will compare eacg adjacent elements till end of the array and at any point if we see arr[i]>arr[i+1] we will stop and return false
+Create a program to find smallest and second smallest number in an array.
+
+create a program which will print all the permutations of a given string with repetition
+ a
+ a 
+
+ AB 
+
+ AA 
+ AB 
+ BA 
+ BB 
+
+ n== arr.length
+
+ printCombination(n,str,char [] arr)
+
+ printCombination(0,str,new char[str.length])
+
+ OOPs concepts
+ Encapsulation
+ Abstraction 
+ Inheritance 
+ Polymorphism
+
+Class A 
+{
+
+}
+Class A extends Object
+{
+
+}
+extends keyword is used to inherit the properties of a class.
+The class that receives the properties is called subclass/derived class/child class
+The class from which the properties get inherited known as baseclass/parentclass/super class
+Advantage
+    Code resuability
+
+Use case : Car Manufacturing System
+
+protected access modifier is used when we want to define some variables or methods that are visible to the subclasses but invisible to everything else.
+
+Association, Composition and Aggregation
+
+Association
+    relationship between any two classes
+
+    one-to-one
+    one-to-many
+    many-to-one
+    many-to-many
+
+    Professor
+
+    Department
+
+    Professor one-to-one Department
+    Professor one-to-many Department
+    Professor many-to-one Department
+    Professor many-to-many Department
+
+    Forms of Association (Has - A)
+        - Aggregation
+            It is a loosly coupled relation exist between two classes
+            it ia a weak form of Association
+            although the classes are asscociated with each other, one can exist without the other independently.
+        Use Case : association between country and sportsperson
+
+        - Composition
+            It is a form of relation that is more tightly coupled.
+            It is also known as strong association
+            the classes cannot exist independent of each other
+        Use Case : association between organization and employee
+
+CC #3
+problem statement
+    Todo Manager Application, which manage our tasks and keep track of our tasks
+
+User Scenario:
+    As a user, I should be able to register and login to the Application
+    As a user, I can be either client or visitor
+    As a visitor, I can only see the tasks assigned to me 
+    As a client, I should be able to add, update, delete the task in the array.
+    As a client, I should be able to search a task from an array.
+    As a client, I should be able to assign the task to a visitor
+
+Instructions
+    parent class - User
+    child class - Client and visitor
+    use arrays to store the user objects.
+    All the CRUD operations should happen in a dao class.
+    Main class should contain only menu.
+    The application can be exited only if user enters 0 to exit.
+    User should see the menu repeatedly
