@@ -1,0 +1,141 @@
+Polymorphism
+one name having many forms
+
+getArea(int radius){}
+getArea(int length, int breadth){}
+
+Polymorphism is just the ability of a method to behave differently at different places
+
+System.out.println(10) ->10
+System.out.println("Hello")->Hello
+System.out.println(50.5) -> 50.5
+
+Types of Polymorphism
+    Static / Static Binding/ Compile time Polymorphism
+        Method Overloading
+    Dynamic / Dynamic binding/ Run time Polymorphism
+        Method Overriding
+    
+Static Polymorphism
+    Method Overloading
+        If a class have multiple methods with same name but with different parameter list
+        Parameter list should be differ in either
+            Number of parameters
+            Data type of parameters
+            Sequence of data tyepe of parameters
+        return type and exception thrown by method doeesn't take part in method overloading
+        method call to method definition is resolved at COMPILER level that is why it is called static polymorphism
+
+getCustomerByFirstNameAndDOB(String firstName, Date dob){}
+
+getCustomerByAccountNumber(long accountNumber){}
+
+getCustomerByPanNumber(String panNumber){}
+
+getCustomerByFirstNameLastNameAndDob(String firstName, String lastName, Date dob){}
+
+getCustomerDetails(String firstName, Date dob){}
+
+getCustomerDetails(long accountNumber){}
+
+getCustomerDetails(String panNumber){}
+
+getCustomerDetails(String firstName, String lastName, Date dob){}
+
+getCustomerDetails("ABCD123566")
+
+Any method call which is resolved at Compiler level is called satic Polymorphism and the method call which is resolved at JVM level is called dynamic polymorphism
+
+A 
+|
+B 
+|
+C D
+widening -- converting a lower data type to a higher data type
+
+Boxing -- the conversion between the primitive types and their corresponding object wrapper classes
+
+From a byte -> short -> int -> long -> float -> double
+
+From a short -> int -> long -> float -> double
+
+From an int -> long -> float -> double
+
+From a char -> int -> long -> float -> double
+
+From long -> float -> double
+
+From float -> double
+
+Method Overriding
+    parent class - connect() -- does connection with some remote service
+    child class -- connect() -- provides own implementation
+whenever connect() method is called using child class object, then connect() method of child class will be called and not the connect() method of parent classs.
+
+Rules
+    1. Access Specifier of method
+    2. Return type of method
+    3. Name of the method
+    4. Arguments/parameters of the method
+    5. Exception that method throws
+Interface
+    - when you know the contract methods but don't know anything about the implementation.
+    - your contract implementation can change in future.
+    - you want to achieve dynamic polymorphism and loose coupling 
+Java 8
+    default and static method in Interface
+    Functional Interface
+    predefined functional Interface
+
+    A{}
+    B{}
+    C{}
+    D{}
+    xyzInterface{}
+    Default Method
+         we can  add new methods in the exisiting interface in such a way so that tey are backword compatible.
+         backword compatibility is adding new features without breaking the old code.
+         to enhance the Collections API in Java 8 to support lambda expression
+    Functional Interface
+        an interface that has only one abstract method.
+        it can contain any number of default and static method.
+        it is also known as single abstract method interface
+        @FunctionalInterface
+        Example : Runnable, Comparable
+        Predicate
+            public interface Predicate()
+            {
+                public boolean test(T t);
+            }
+Lambda expression
+    It is used to implement a method defined by a functional interface.
+    It is an anonymous function 
+    It is an expression that represents an instance of a functional interface
+    (parameter list) -> {Lambda body}
+    (x,y) -> x+y
+
+Functional Programming
+
+Exception handling
+This is the mechanism used to handle the unexpected situation in code
+Throwable 
+    Exception
+        Checked Exception 
+            these are the exceptions that the Java compiler requires us to handle.
+        Unchecked Exception / Runtime Exception
+            these are the exception which occurs at run time due to program error
+        situation error (Checked) and Usage error(Un checked)
+    Error
+        it represents serious and usually irrecoverable conditions
+Exception handling
+    try .. catch
+    try 
+    -- suspected lines of code goes here
+    catch
+    -- responisble to handle exception
+    finally
+    -- it executes always
+        with try (if no exception)
+        with catch (if exception)
+    throw and throws 
+    try with resources (java se 7)
