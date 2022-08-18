@@ -1,0 +1,156 @@
+Collection Framework
+    It is an object which represents a group of objects.
+
+Collection
+   set --> SortedSet
+   list 
+   queue
+   dequeue
+
+Map --> SortedMap
+
+List 
+    The list interface can contain duplicate elements and is implemented by classes like:
+        ArrayList
+        LinkedList
+        Vector
+        Stack
+    List represents an ordered collection of elements
+Stack
+    it works on LIFO (Last In First Out)
+    we push the element to the top of the Stack and popped off from the top of the stack again
+Queue 
+    it works on FIFO (First In First Out)
+    offer() - inserts the specified element into the queue.
+    add() - inserts the specified element into the queue.
+    element() - returns the head of the queue. throws exception if the queue is empty
+    peek()- returns the head of the queue. returns null if the queue is empty
+    remover()- return and removes the head of the queue.throws exception if the queue is empty
+    poll() - removes the head of the queue.returns null if the queue is empty
+Linked List Vs Array List 
+    random access of elements possible in Array List but not in Linked List.
+    when the requirement is add and remove -- Linked List
+    When the requirement is fetch and traverse -- ArrayList
+Priority Queue
+    This class is a queue data structure implemetation that processes the queue items based on their priorities
+Set 
+    it represents a collection of unique elements.
+    no guarantee to return the elements in any predicatble order.
+HashSet
+TreeSet
+LinkedHashSet
+ConcurrentSkipListSet
+
+Map
+    key value pairs (Keys should be immutable)
+    It cannot contain duplicate values
+    three collection of view
+        set of Keys
+        collection of values
+        set of key-value pairs
+HashMap
+Treemap
+LinkedHashMap
+ConcurrentHashMap
+
+Generics
+    It specifies the class or method for different types
+    provide type safety
+    Resolve type casting
+    Generic class <T>
+    Generic method
+Type Parameters
+Bounded type    
+    parameter type can be bounded by some range using "extends" keyword
+
+    class classname<T extends A>
+    {
+
+    }
+    class classname<T extends A&B>
+    {
+
+    }
+
+Naming Convention for the type parameters 
+T  - Type
+E  - Element
+K  - key
+N  - Number
+V - Value
+
+Wildcards (?) in Generics 
+? represents any 
+
+public static void deposit(ArrayList<?> money)
+{
+
+} 
+upper bounded wildcards 
+    these are used to restrict the upper bound parameter type
+public static void deposit(ArrayList<? extends Number> money)
+{
+
+} 
+Number -- > Integer --> xyz
+
+Lower bounded wildcards
+
+ these are used to restrict the lower bound parameter type
+public static void deposit(ArrayList<? super Number> money)
+{
+
+} 
+Number -- > Integer --> xyz (X)
+
+Sream API 
+
+Collection
+ it is an in-memory data structuer to hold values and before we start using collection, all the values should have been populated
+Stream 
+ It is a data structure that is computed on-demand. 
+ It does not store data, It operates on the source data structure (Collection or Array)
+ and produce pipelined data that we can use and perform specific operations.
+ designed for lambdas
+
+ Stream.of() - from similar type of data
+
+ Stream Intermediate operations
+ filter()
+  It tests the stream elements for a condition and generated filtered list
+map()
+    It converts each element in the stream into another object via the given function
+sorted()
+    It will return the sorted view of the stream
+Terminal operations
+    it returns a result of a certain type after processing all the stream elements
+
+forEach()
+    iterating over all the elements of a stream and perform some operations on each of them.
+collect()
+    it is used to receive elements from a stream and store them in a collection
+count()
+    returns the number of elements in the string
+reduce()
+    It performs a reduction on the elements
+match()
+    is used to check whether a given predicate matches the stream elements
+    it retuens boolean value
+findFirst()
+    it is used to find the first string froma stream
+
+print the name of all the departments in the organization
+
+count the male and female employees in the organization
+
+count the number of employees in each department
+
+separate the employees who are younger or equal to 25 from those who are older than 25
+
+who is the oldest employee in the organization what is his age and which department he belongs to
+
+what is the average salary and total salary of the whole organization
+
+what is the average salary of male and female employees
+
+what is the average salary of each department
