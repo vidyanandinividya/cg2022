@@ -1,0 +1,114 @@
+File Handling
+    It implies reading from and writing data to a file.
+File Operations
+    Create a File
+    Get File Information
+    Write to a File
+    Read from a File
+Create a File
+    createNewFile() -- boolean
+
+Write to a File
+    FileWriter
+    PrintWriter
+    Files.write
+java.io.File
+    File file=new File("src/file.txt");
+    boolean result=file.delete();
+
+    file object is immutable.
+    once created , the abstract path represented by this object will never change
+
+
+
+java.nio.file.path
+    Path path=Paths.get("src/file.txt");
+    it creates the path instance using the static get() method
+
+    Files.delete(path);
+Files.lines
+    it returns the content of an input file as 'stream' of 'string' value
+
+    Stream - sequence of data
+Files.list
+    It can be used to obtain a list of all the files/folders at the specified location
+Files.walk 
+    It is used to obtain a List of all the files and folders at the specified location.
+
+Deleting Files
+File class
+    delete() -- 
+        returns true if the file or directory is successfully deleted otherwise returns false.
+        never thrown any exception
+    DeleteOnExit() --
+        it registers the file for deletion when the virtual machine terminates
+        useful in Unit Testing use case.
+        once deletion has been requested, it is not possible to cancel the request.
+java.nio.io.file.Files
+    delete(path)
+        it is same as File.delete() method
+        It will throw the exception if the file can not be deleted
+    deleteIfExists(path)
+        it deletes a file or directory if exists.
+Copying a File
+    Files.copy()
+
+    Replace_existing : any existing target file will be replaced
+
+    FileUtils
+    IOUtils
+CSV File
+    Comma-Separated Values file.
+    The separator used to split the data is commas (,)
+    Scanner class
+    Bufferedreader class
+    String.split()
+    OpenCSV API 
+Layered Architecture
+    It is also known as n-tier architecture which describes an architectural pattern composed of several spearate horizontal layers that function together as a single unit of software.
+
+    A layer is a speration of components or code.
+
+    Layer 1
+        |
+    Layer 2
+        |
+    Layer 3
+
+    layers are only connected to the layers directly below or above them
+    Changes are isolated to the specific layers that is altered
+    Separation of concerns
+
+    3-layered architecture
+        Presentation Layer
+            It is our connection to the outside world (client)
+            This is where we handle all the incoming requests to our application and return a response
+            This layer is also the first line of defence in our appllication because this is where we do authorization checks
+            one layer below the presentation layer is Application Layer
+            This layer has dependency only on the Application Layer
+        Application Layer /Business Layer 
+            In this layer we develop all the functions our application should provide.
+            The validations done in this layer.
+            Application layer relies upon data layer to save all the data for later user or fetch some previously saved data.
+            Application Layer has dependency only on data layer
+            Application Layer returns the result of its calculation back to the Presentation layer
+        Data Layer
+            This layer handles the persisiting of our data.
+            It communicates with the Database 
+            It has no other dependencies
+            Data Layer returns its data back to the Application Layer
+DTO (Data Transfer Object) /Entity object   
+        POJO class
+        It is sent by a client from outside of our application.
+        DTO is received in the Presentation Layer.
+        Presentation Layer sends DTO objects to the Application Layer.
+        Application Layer returns DTO objects as a result back to the Presentation Layer
+Advantage
+    Testing is easier because of the separated components , each component can be tested individually.
+    Theres is reduced dependency because the function of each layer is separate from other layers.
+Disadvantages
+    There is interdependencies between layers since a layer depends on the layer above it to receive data. (tight coupling)
+    They can be difficult to maintain
+    Layers all make a single application. Changes to one layer require redeploymnet of the whole application.
+
+
