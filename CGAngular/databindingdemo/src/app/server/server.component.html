@@ -1,0 +1,22 @@
+<h2>One way Binding - String Interpolation</h2>
+<p>server with ID {{serverId}} is {{getServerStatus()}} </p>
+<p>Server id : {{server.id}}  is {{server.status}}</p>
+<p>Available Servers: {{servers}}</p>
+<p>Number of avialbale servers :{{servers.length}}</p>
+<p>{{2*10}}</p>
+<p>Server URL: {{serverUlr}}</p>
+<hr>
+<h2>One way Binding - Property Binding & Event Binding</h2>
+<input type="text" [disabled]="disableBox" [value]="serverId"><br><br>
+<input type="text" disabled={{disableBox}} value={{getServerStatus()}}><br><br>
+<button (click)="enableBox()">Enable TextBox</button><br><br>
+<h2>Two way Binding </h2>
+<input type="text" [(ngModel)]="serverName">
+<p>{{serverName}}</p>
+<h2>combine Binding </h2>
+<label>Server Name</label><br><br>
+<button [disabled]="!disableBox" (click)="onCreateServer()">Add Server
+
+</button>
+<p>{{serverCreationStatus}}</p>
+<input type="text" (input)="onUpdateServerName($event)"><br><br>

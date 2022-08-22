@@ -1,0 +1,58 @@
+Angular
+    It is a framework which allows us to create reactive, single page application (SPA)
+SPA
+    it loads a single HTML page and dynamically update that page as the user interact with the application
+Angular JS vs Angular 
+
+Angular 6
+    node .js 
+    npm install -g @angular/cli   -- used to install angular
+    npm install -g typescript       -- used to install typescript
+
+To check the version 
+    ng --version 
+    or
+    npm run ng -v 
+
+To create Angular Project 
+    ng new projectname    -- git installed with the project 
+    ng new projectname --skip-git
+To open the angular project in VS code -- 
+code .
+
+To run the project
+ng serve
+
+or
+npm start
+
+or 
+
+ng serve -open
+
+typescript
+    it's just a superset of JavaScript
+    it cannot be rendered in browser directly
+    once it gets compiled gives you the js file
+
+Angular Component
+    these are the most basic UI building blocks of an Angular App.
+
+    ng g c component-name
+
+    Template
+        defines the layput and content of the view.
+        these are the html files (Angular Template Syntax)
+    - provide an external template (templateUrl)
+    - Defining the template inline
+Data Binding
+    the way of communication between view (template) and code (typescript)
+        one way Binding
+            output data from the typescript code in HTML template 
+                string interpolation
+                property binding
+                event binding
+
+        two way binding
+            combine both the directions
+            
