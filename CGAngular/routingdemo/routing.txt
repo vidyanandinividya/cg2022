@@ -1,0 +1,32 @@
+Router Outlet
+    it is a built-in directive
+    Every angular app should have atleast one router Outlet
+    in app.component.html (by default)
+
+    common mistakes:
+        1. adding "/" in path
+        2. component names in qoutes ""
+        3. bad formed array of routes
+we can define multiple outlets by giving name to them
+that's y we call them named router outlet
+it will not show if you directky access it in the URL
+syntax:
+http://localhost:4200/<primary-outlet>(<routerOutletName>:<secondaryPath>)
+
+ng g m app-routing --flat --module=app
+
+routerlink
+    when it applied to an element in a template, makes that element a link that initiates naviagtion to a route
+
+    it can be static or dynamic
+
+    <a [RouterLink]="/loans"></a>
+
+
+Redirect routes
+    by default the root level is ' '
+    redirectTo and specify which route it has to go
+wildcard routes
+    any unmatched route will be intercepted by wild card route
+    this has to be the last route in your configuration
+    we define by saying the path to match "**"

@@ -1,0 +1,38 @@
+<h1 appCustomStyle>{{title}}</h1>
+<h2>Normal Heading</h2>
+<h2 appCustomStyle>Custom Directive Heading</h2>
+<h2>Structural Directive</h2>
+<!--<p>ngIF Demo </p>
+<div *ngIf="show  then ifBlock else elseBlock">
+</div>
+<ng-template #ifBlock>
+  <p>If Condition</p>
+</ng-template>
+<ng-template #elseBlock>
+  <p>Else Condition</p>
+</ng-template>
+<ng-template [ngIf]="color=='red'" [ngIfElse]="defaultBlock">
+  <h1 style="color:red ;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+  <h1 style="color:green ;">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+  <h1 style="color:blue ;">blue Color</h1>
+</ng-template>
+<ng-template #defaultBlock>
+  <h1>No color matched</h1>
+</ng-template>-->
+<!--<p>ngFor Demo </p>
+<h3 *ngFor="let item of users">Name is :{{item}}</h3>
+<div *ngFor="let user of userDetails">
+  Details: {{user.name}} ----- {{user.email}} ---- {{user.age}}
+</div>-->
+<p>ngSwitch Demo</p>
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'" style="color: red;">Red Color</p>
+  <p *ngSwitchCase="'green'" style="color: green;">green Color</p>
+  <p *ngSwitchCase="'blue'" [ngStyle]="{'color':'blue'}">blue Color</p>
+  <p *ngSwitchDefault>Unknown Color</p>
+
+</div>

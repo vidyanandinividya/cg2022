@@ -1,0 +1,109 @@
+Module
+    Angular is a module based architecture
+        BrowserModule
+        AppRoutingModule
+    Angular Material Library
+        MatButtonModule
+    All the code and functionality is grouped in a module
+
+    whenever you see @ symbol - it's a decorator
+
+    what module consists of:
+        declarations:   
+            this is where we will add all the components of the module
+        imports:
+            we can import modules inside a module
+        providers
+            services that we need will be specified here
+        Bootstrap:
+            what is the first component, the module should load
+        exports:
+            is to export and expose the component outside of the module
+    Every angular application should have atleast one module (AppModule)
+
+    Contacts
+    Users
+    Authentication
+    settings
+    Profile
+    Leads
+Free User
+    Contacts
+    Users
+
+Premium User
+    Contacts
+    Users
+    Leads
+Enterprise User
+    Contacts
+    Users
+    Authentication
+    settings
+    Profile
+    Leads
+Modules - Grouping
+    components
+    services
+    pipes
+    directives
+Create a custom module
+    ng generate module modulename
+
+To create a component inside module
+    ng g c modulenames/componentname
+
+Pass data from  parent to child
+    child component - @Input decorator
+    @Input
+        This decorator in a child component or directive signifies that the property can receive its value from its parent
+    @Input   parent -> child
+Sending data from child to parent
+    child component - @Output decorator
+    @output
+        This decorator in a child component or directive lets data from from the child to parent.
+    @Output Parent <-  Child
+    @Output -- EventEmitter (@angular/core)
+
+    Directives
+        These are used to extend the power of the HTML by giving it new syntax
+
+    3 types of directives
+        Component  -- AppComponent
+            It has its own template
+            every angular app must have atleast one component directive (AppComponent)
+        Structural 
+            (*) symbol
+            it structers of the template
+            *ngIf
+                we can do a conditional expression
+                if else
+            *ngFor
+                iteration over a set of data and do some operation
+            *ngSwitch
+                switch case statement to evaluate some expressions
+                true or false --> corresponding output
+        ng-template 
+            it is used to render the html template
+            it is used with ngIf to display the else template
+        Attribute
+            ngClass
+            ngStyle - change the style property
+    Custom Directive
+        ng g directive directivename
+
+Routing 
+    http://myapplication.com/  -- Home
+
+    http://myapplication.com/profile  -- Component Routing
+
+    http://myapplication.com/search?user=abc -- Query Param
+
+    http://myapplication.com/users   -- Module
+
+        view-user  http://myapplication.com/users/view/10  -- child routes
+        edit-user   http://myapplication.com/users/edit/10
+        add-user  http://myapplication.com/users/add
+        manage-user http://myapplication.com/users/manage
+
+    http://myapplication.com/pageNotFound -- 404 error
