@@ -1,0 +1,90 @@
+Forms
+vital to business applications
+Create an experience that guides the user efficiently and effectively through the workflow
+
+Developers
+    Data binding
+    Change tracking
+    Validation
+    Visual Feedback
+    Error Messages
+    Form Submission
+
+Angular Forms
+
+    Template(Collect Data) ------> Class/Interface (Bind Data) ------>Service (Send Data) ----->Server
+
+    Template Driven Forms (TDF)
+        Heavy on the component template 
+        small application 
+        Easy to use and similar to HTML Forms
+        Two way data binding using ngModel
+        Bulky HTML code and minimal component code
+        Automatically tracks the form and form elements state and validity
+        Unit testing is a challenge
+        Readability decreases with complex forms and validations
+
+    Reactive Forms  (RF)
+        Heavy on the component class
+        Dynamic Forms
+        suitable for large application
+
+Track control state and validity
+
+state                           class if true       class if false
+The control has been visited    ng-touched          ng-untouched
+
+The control value has changed   ng-dirty            ng-pristine
+
+The control's value is valid    ng-valid            ng-invalid
+
+
+class               property
+
+ng-untouched        untouched
+ng-touched          touched
+ng-pristine         pristine
+ng-dirty            dirty
+ng-valid            valid
+ng-invalid          invalid 
+
+Reactive Forms
+
+    code and the logic resides in the component class
+
+    no two way binding
+    well suited for complex scenarios
+    Dynamic form fields
+    Custom validations
+    Dynamic validation 
+    Unit test 
+
+JSON 
+    JavasScript Object Notation
+
+    Data Representation Format
+    commonly used for APIs and configs
+    Lightweight and easy to read/write
+    integrates with most languages
+    we can fetch the data asynchronously adn GET, POST PUT and DELETE http requests
+    GET -- reed the details
+    POST -- add the details /create new details
+    PUT -- update the existing details
+    DELETE -- used to delete the particular or all details
+JSON Types
+    Strings "Hello" "Hello world" "1"
+    Numbers 10 10.5 -30
+    Booleans true false
+    null     null
+    Arrays      [1,2,3] ["Hello","world"]
+    Objects     {"key":"value"} {"age":30}
+Services
+    A class with a specific purpose
+        share data
+        implements application logic
+        External Internal
+        These are reusable common shared functionallity between different components
+        DI aims to separate the concerns of constructing objects and using them, leading to loosly coupled program
+        service are injected using the DI mechannism (Dependency Injection)
+        These are used for interactions with backend APIs or rest endpoint.
+    ng g s servicename
