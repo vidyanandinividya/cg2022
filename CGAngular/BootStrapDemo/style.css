@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav li a
+{
+    float: right;
+    color: #f5f6!important;
+}
+.navbar-brand
+{
+    width: 150px;
+    margin-left: 30px;
+    color: #f5f6!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    outline: none!important;
+}
+nav .fa-bars
+{
+    color: #f5f6;
+    font-size: 26px;
+}
+.header
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(images/bg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+}
+.welcome
+{
+    padding: 50px 100px;
+    background-color: #fff;
+    margin-top: -140px;
+    box-shadow: 0 0 20px 7px rgpa(0,0,0,0.2);
+
+}
+.welcome:hover
+{
+    transform: translateY(-20px);
+    color: #fff;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0px rgpa(0,0,0,0.3);
+
+}
+.welcome .btn-primary
+{
+    border-radius: 30px;
+}
+#course
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.card .inner
+{
+   overflow: hidden;
+}
+.card .inner .img
+{
+    transition: 0.5s ease;
+}
+.inner:hover img
+{
+    transform: scale(1.5) rotate(5deg);
+}
+.card:hover
+{
+    color:#fff;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+#course .container h2
+{
+    text-decoration: underline;
+    text-underline-position: under;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+}
+#team
+{
+    margin-bottom: 2rem;
+}
+.carousel-item
+{
+    padding: 80px;
+}
+.carousel-item .img-box
+{
+    width: 135px;
+    height: 135px;
+}

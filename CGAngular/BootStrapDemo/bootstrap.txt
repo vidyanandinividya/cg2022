@@ -1,0 +1,38 @@
+Bootstrap
+    It is a giant collection of handy, reusable bits of code written in HTML,CSS and JavaScript
+
+Layouts and Grids
+    container is the most basic layout element in Bootstrap
+    There are two container class available
+    .container 
+        it provides a responsive fixed width container
+        100% fixed width
+        Desktop/screen
+            -fixed width
+        static websites
+            Real estate company
+            Restaurant
+            small medium scale websites
+
+    .container-fluid
+        It provides a full width container, spanning the entire width of the 
+        always about percentage design
+        40% sidebar
+        60% main content
+        viewport
+        mobile
+        ipad
+        Desktop
+        large screens
+Grid
+    Design the layout, templates of the website 
+    It allows upto 12 columns in a row
+    It consists of row and columns
+    It supports various screen resolution
+    xs
+    sm -- mobile/ipad
+    md -- ipad/desktop
+    lg 
+    xl 
+    xlg
+    xxlg
