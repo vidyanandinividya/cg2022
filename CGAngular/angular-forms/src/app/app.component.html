@@ -45,8 +45,19 @@
     <input type="checkbox" class="form-check-input" name="feedback" [ngModel]="userModel.feedback" >
     <label>Send me Feedback</label>
   </div>-->
-  <button class="btn btn-primary" type="submit">Submit Form</button>
-  <button class="btn btn-secondary" (click)="getUser()">Get User Details</button>
+
+  
+  <!--<button class="btn btn-primary" type="submit">Submit Form</button>-->
+  
+  
   
 </form>
+<button class="btn btn-secondary" (click)="getUser()">Get User Details</button>
+</div>
+<div *ngFor="let user of userList">
+  <p>{{user.name}}</p>
+  <p>{{user.email}}</p>
+  <p>{{user.phone}}</p>
+  <button class="btn btn-secondary" (click)="deleteUser(user.id)">Delete User Details</button>
+  <button class="btn btn-secondary" (click)="updateUser()">Update Details</button>
 </div>

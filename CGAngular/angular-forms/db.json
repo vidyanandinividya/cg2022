@@ -15,18 +15,6 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "vidya",
-      "eamil": "vidya@gmail.com",
-      "phone": 1234567890
-    },
-    {
-      "id": 2,
-      "name": "vidya",
-      "eamil": "vidya@gmail.com",
-      "phone": 1234567890
-    },
-    {
       "name": "Annie",
       "email": "annie@gmail.com",
       "phone": "1234567890",
@@ -37,21 +25,6 @@
       "email": "annie@gmail.com",
       "phone": "1234567890",
       "id": 4
-    },
-    {
-      "name": "Thomas",
-      "email": "thomas@gmail.com",
-      "phone": "1234567890",
-      "id": 5
-    },
-    {
-      "name": "Thomas",
-      "email": "thomas@gmail.com",
-      "phone": "1234567890",
-      "id": 6
-    },
-    {
-      "id": 7
     }
   ]
 }

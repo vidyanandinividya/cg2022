@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'angular-forms';
   topics=['Angular','Java','Web Basics','Bootstrap','JSON server']
   userModel=new User();
+  userList : any= [];
   constructor(private user:UserService){}
   onSubmit()
   {
@@ -32,6 +33,17 @@ export class AppComponent {
   {
     this.user.getUserDetails().subscribe(data=>{
       console.log(data);
+      this.userList=data
     });
+  }
+  deleteUser(id:any)
+  {
+this.user.deleteUserDetails(id).subscribe((data)=>{
+  console.log(data)
+})
+  }
+  updateUser()
+  {
+
   }
 }
